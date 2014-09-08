@@ -18,10 +18,10 @@ public class Main {
 		s.cadastraUsuario(u1);
 		
 
-		Produto cervejaSkolLatao473ML = new Produto("Cerveja Skol Latao 473ml", 2.00 , CategoriaDeProduto.BEBIDASALCOOLICAS);
-		Produto vodkaAbsolut1L = new Produto("Vodka Absolut 1L", 2.00 , CategoriaDeProduto.BEBIDASALCOOLICAS);
-		Produto cadeiraTramontinaModeloRL = new Produto("Cadeira Tramontina Modelo RL", 2.00 , CategoriaDeProduto.EQUIPAMENTOSINSUMOSESERVIÇOS);
-		Produto refrigeranteGuaranaAntartica2L = new Produto("Guarana Antartica 2L", 4.50 , CategoriaDeProduto.BEBIDASNAOALCOOLICAS);
+		Produto cervejaSkolLatao473ML = new Produto("Cerveja Skol Latao 473ml", 2.00 , CategoriaDeProduto.BEBIDAS_ALCOOLICAS);
+		Produto vodkaAbsolut1L = new Produto("Vodka Absolut 1L", 2.00 , CategoriaDeProduto.BEBIDAS_ALCOOLICAS);
+		Produto cadeiraTramontinaModeloRL = new Produto("Cadeira Tramontina Modelo RL", 2.00 , CategoriaDeProduto.EQUIPAMENTOS_INSUMOS_E_SERVICOS);
+		Produto refrigeranteGuaranaAntartica2L = new Produto("Guarana Antartica 2L", 4.50 , CategoriaDeProduto.BEBIDAS_NAO_ALCOOLICAS);
 		Produto sabaoEmPoOmo500G = new Produto("Sabao Em Pó Omo", 3.00 , CategoriaDeProduto.LIMPEZA);
 		
 		ListaDeProdutos lista1 = new ListaDeProdutos("feira semanal");

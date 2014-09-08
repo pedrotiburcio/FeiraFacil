@@ -72,13 +72,13 @@ public class Usuario {
 	}
 	
 	public void removeListaDoConjuntoDeListas(String nome){
-		int tamanhoAntesDaRemoçao = conjuntoDeListas.size();
+		int tamanhoAntesDaRemocao = conjuntoDeListas.size();
 		for(ListaDeProdutos l : conjuntoDeListas){
 			if(l.getNome().equals(nome)){
 				conjuntoDeListas.remove(l);
 			}
 		}
-		if(conjuntoDeListas.size() == tamanhoAntesDaRemoçao){
+		if(conjuntoDeListas.size() == tamanhoAntesDaRemocao){
 			System.out.println("Lista não encontrada.");
 		}
 	}

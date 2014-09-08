@@ -5,13 +5,13 @@ import util.CategoriaDeProduto;
 public class Produto {
 
 	private String nome;
-	private double preço;
-	private boolean estaEmPromoçao = false;
+	private double preco;
+	private boolean estaEmPromocao = false;
 	private CategoriaDeProduto tipo;
 	
-	public Produto(String nome, double preço, CategoriaDeProduto tipo) {
+	public Produto(String nome, double preco, CategoriaDeProduto tipo) {
 		this.nome = nome;
-		this.preço = preço;
+		this.preco = preco;
 		this.tipo = tipo;
 	}
 
@@ -23,15 +23,15 @@ public class Produto {
 		this.nome = nome;
 	}
 
-	public double getPreço() {
-		return preço;
+	public double getPreco() {
+		return preco;
 	}
 
-	public void setPreço(double preço) {
-		if(preço < this.preço){
-			estaEmPromoçao = true;
+	public void setPreco(double preco) {
+		if(preco < this.preco){
+			estaEmPromocao = true;
 		}
-		this.preço = preço;
+		this.preco = preco;
 	}
 
 	public CategoriaDeProduto getTipo() {
@@ -42,14 +42,13 @@ public class Produto {
 		this.tipo = tipo;
 	}
 	
-	public boolean estaEmPromoçao(){
-		return estaEmPromoçao;
+	public boolean estaEmPromocao(){
+		return estaEmPromocao;
 	}
 	
 	@Override
 	public String toString() {
-		return "Produto [nome=" + nome + ", preço=" + preço + ", tipo=" + tipo
-				+ "]";
+		return "Produto [nome=" + nome + ", preço=" + preco + ", tipo=" + tipo + "]";
 	}
 
 }

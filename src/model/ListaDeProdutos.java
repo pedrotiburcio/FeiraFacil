@@ -5,13 +5,13 @@ import java.util.*;
 public class ListaDeProdutos{
 
 	private List<Produto> listaDeProdutos;
-	private double preço;
+	private double preco;
 	private String nome;
 	
 	public ListaDeProdutos(String nome){
 		this.nome = nome;
 		listaDeProdutos = new ArrayList<Produto>();
-		preço = 0;
+		preco = 0;
 	}
 	
 	public String getNome(){
@@ -22,12 +22,12 @@ public class ListaDeProdutos{
 	}
 	
 	public void adicionaProduto(Produto produto){
-		setPreço(this.preço + produto.getPreço());
+		setPreco(this.preco + produto.getPreco());
 		listaDeProdutos.add(produto);
 	}
 	
 	public void removeProduto(Produto produto){
-		setPreço(this.preço - produto.getPreço());
+		setPreco(this.preco - produto.getPreco());
 		listaDeProdutos.remove(produto);
 	}
 	
@@ -35,21 +35,21 @@ public class ListaDeProdutos{
 		return listaDeProdutos.contains(produto);
 	}	
 	
-	public double getPreço(){
+	public double getPreco(){
 		for(Produto p:  listaDeProdutos){
-			preço += p.getPreço();
+			preco += p.getPreco();
 		}
-		return preço;
+		return preco;
 	}
 	
-	private void setPreço(double preço){
-		this.preço = preço;
+	private void setPreco(double preco){
+		this.preco = preco;
 	}
 	
 	@Override
 	public String toString() {
 		return "ListaDeProdutos [listaDeProdutos=" + listaDeProdutos
-				+ ", preço=" + preço + "]";
+				+ ", preco=" + preco + "]";
 	}
 	
 }
