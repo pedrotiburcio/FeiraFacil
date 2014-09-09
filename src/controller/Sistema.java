@@ -7,9 +7,10 @@ import model.*;
 
 public class Sistema {
 
-	Usuario usuario;
-	List<Usuario> listaDeUsuarios;
-	// TODO sistema deve conter a lista atual
+	private Usuario usuario;
+	private List<Usuario> listaDeUsuarios;
+	// TODO sistema deve conter a lista atual e controladores
+	private ControllerListaDeProdutos controladorLista; 
 	
 	public Sistema() {
 		listaDeUsuarios = new ArrayList<Usuario>();

@@ -5,15 +5,15 @@ import java.util.*;
 public class ListaDeProdutos{
 
 	private List<Produto> listaDeProdutos;
-	// TODO lembrar de recalcular esse valor quando necessario, pois pode mudar dependendo
-	// do dia, soh eh bom armazenar para saber se a feira esta ou nao mais barata
-	private double preco;
+	// TODO lembrar de recalcular esse valor (o preço) quando necessario, pois pode mudar 
+	// dependendo do dia, soh eh bom armazenar para saber se a feira esta ou nao mais barata
+	private double precoTotal;
 	private String nome;
 	
 	public ListaDeProdutos(String nome){
 		this.nome = nome;
 		listaDeProdutos = new ArrayList<Produto>();
-		preco = 0;
+		precoTotal = 0;
 	}
 	
 	public String getNome(){
@@ -24,12 +24,12 @@ public class ListaDeProdutos{
 	}
 	
 	public void adicionaProduto(Produto produto){
-		setPreco(this.preco + produto.getPreco());
+		setPreco(this.precoTotal + produto.getPreco());
 		listaDeProdutos.add(produto);
 	}
 	
 	public void removeProduto(Produto produto){
-		setPreco(this.preco - produto.getPreco());
+		setPreco(this.precoTotal - produto.getPreco());
 		listaDeProdutos.remove(produto);
 	}
 	
@@ -46,16 +46,16 @@ public class ListaDeProdutos{
 //	}
 	
 	public double getPreco(){
-		return preco;
+		return precoTotal;
 	}
 	
 	private void setPreco(double preco){
-		this.preco = preco;
+		this.precoTotal = preco;
 	}
 	
 	@Override
 	public String toString() {
-		return "ListaDeProdutos [listaDeProdutos=" + listaDeProdutos + ", preco=" + preco + "]";
+		return "ListaDeProdutos [listaDeProdutos=" + listaDeProdutos + ", preco=" + precoTotal + "]";
 	}
 	
 }

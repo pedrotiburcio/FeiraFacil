@@ -6,7 +6,7 @@ public class Produto {
 
 	private String nome;
 	private double preco;
-	private boolean estaEmPromocao = false;
+	private boolean estaEmPromocao = false; // TODO pensar melhor na necessidade disso
 	private CategoriaDeProduto tipo;
 	
 	public Produto(String nome, double preco, CategoriaDeProduto tipo) {
@@ -28,12 +28,15 @@ public class Produto {
 	}
 
 	//TODO preco mais baixo nao quer dizer que esta em promocao
+//	public void setPreco(double preco) {
+//		if(preco < this.preco){
+//			estaEmPromocao = true;
+//		}
+//		this.preco = preco;
+//	}
 	public void setPreco(double preco) {
-		if(preco < this.preco){
-			estaEmPromocao = true;
-		}
 		this.preco = preco;
-	}
+	}	
 
 	public CategoriaDeProduto getTipo() {
 		return tipo;
@@ -49,7 +52,7 @@ public class Produto {
 	
 	@Override
 	public String toString() {
-		return "Produto [nome=" + nome + ", preÃ§o=" + preco + ", tipo=" + tipo + "]";
+		return "Produto [nome=" + nome + ", preço=" + preco + ", tipo=" + tipo + "]";
 	}
 
 }
