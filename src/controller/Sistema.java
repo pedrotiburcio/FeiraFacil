@@ -9,6 +9,7 @@ public class Sistema {
 
 	Usuario usuario;
 	List<Usuario> listaDeUsuarios;
+	// TODO sistema deve conter a lista atual
 	
 	public Sistema() {
 		listaDeUsuarios = new ArrayList<Usuario>();

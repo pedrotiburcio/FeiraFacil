@@ -5,6 +5,8 @@ import java.util.*;
 public class ListaDeProdutos{
 
 	private List<Produto> listaDeProdutos;
+	// TODO lembrar de recalcular esse valor quando necessario, pois pode mudar dependendo
+	// do dia, soh eh bom armazenar para saber se a feira esta ou nao mais barata
 	private double preco;
 	private String nome;
 	
@@ -35,10 +37,15 @@ public class ListaDeProdutos{
 		return listaDeProdutos.contains(produto);
 	}	
 	
+	// TODO quando o produto eh adicionado ja modifica a variavel, entao nao precisa incrementar de novo
+//	public double getPreco(){
+//		for(Produto p:  listaDeProdutos){
+//			preco += p.getPreco();
+//		}
+//		return preco;
+//	}
+	
 	public double getPreco(){
-		for(Produto p:  listaDeProdutos){
-			preco += p.getPreco();
-		}
 		return preco;
 	}
 	
@@ -48,8 +55,7 @@ public class ListaDeProdutos{
 	
 	@Override
 	public String toString() {
-		return "ListaDeProdutos [listaDeProdutos=" + listaDeProdutos
-				+ ", preco=" + preco + "]";
+		return "ListaDeProdutos [listaDeProdutos=" + listaDeProdutos + ", preco=" + preco + "]";
 	}
 	
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
-
+	// TODO realmente eh necessario todas essa informacoes? Por mim soh deveria ter o nome e identidade
 	private String nome, telefone, email, dataNasc, cpf, rg;
 	private List<ListaDeProdutos> conjuntoDeListas;
 	private Carrinho carrinho;
@@ -71,6 +71,7 @@ public class Usuario {
 		conjuntoDeListas.add(lista);
 	}
 	
+	//TODO usuario nao eh responsavel por essas funcoes abaixo
 	public void removeListaDoConjuntoDeListas(String nome){
 		int tamanhoAntesDaRemocao = conjuntoDeListas.size();
 		for(ListaDeProdutos l : conjuntoDeListas){

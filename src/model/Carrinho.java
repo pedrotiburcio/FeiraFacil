@@ -2,10 +2,10 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// TODO pode ser abolido
 public class Carrinho {
 	
-	List<ListaDeProdutos> carrinho;
+	private List<ListaDeProdutos> carrinho;
 	
 	public Carrinho(){
 		carrinho = new ArrayList<ListaDeProdutos>();

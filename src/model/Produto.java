@@ -1,7 +1,7 @@
 package model;
 
 import util.CategoriaDeProduto;
-
+// TODO lembrar que vira do banco de dados
 public class Produto {
 
 	private String nome;
@@ -27,6 +27,7 @@ public class Produto {
 		return preco;
 	}
 
+	//TODO preco mais baixo nao quer dizer que esta em promocao
 	public void setPreco(double preco) {
 		if(preco < this.preco){
 			estaEmPromocao = true;

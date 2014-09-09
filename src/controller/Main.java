@@ -22,7 +22,7 @@ public class Main {
 		Produto vodkaAbsolut1L = new Produto("Vodka Absolut 1L", 2.00 , CategoriaDeProduto.BEBIDAS_ALCOOLICAS);
 		Produto cadeiraTramontinaModeloRL = new Produto("Cadeira Tramontina Modelo RL", 2.00 , CategoriaDeProduto.EQUIPAMENTOS_INSUMOS_E_SERVICOS);
 		Produto refrigeranteGuaranaAntartica2L = new Produto("Guarana Antartica 2L", 4.50 , CategoriaDeProduto.BEBIDAS_NAO_ALCOOLICAS);
-		Produto sabaoEmPoOmo500G = new Produto("Sabao Em Pó Omo", 3.00 , CategoriaDeProduto.LIMPEZA);
+		Produto sabaoEmPoOmo500G = new Produto("Sabao Em PO Omo", 3.00 , CategoriaDeProduto.LIMPEZA);
 		
 		ListaDeProdutos lista1 = new ListaDeProdutos("feira semanal");
 		lista1.adicionaProduto(cervejaSkolLatao473ML);
@@ -39,6 +39,8 @@ public class Main {
 		u1.adicionaListaNoCarrinho("feira semanal");
 		System.out.println(u1.estaListaNoCarrinho("feira semanal"));
 		System.out.println(u1.confirmaFeira("feira semanal", "sim"));
+		
+		System.out.println(lista1.getPreco());
 		
 	}
 
