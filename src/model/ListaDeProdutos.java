@@ -58,4 +58,8 @@ public class ListaDeProdutos{
 		return "ListaDeProdutos [listaDeProdutos=" + listaDeProdutos + ", preco=" + precoTotal + "]";
 	}
 	
+	@Override
+	public boolean equals(Object lista) {
+		return this.nome.equalsIgnoreCase(((ListaDeProdutos)lista).getNome());
+	}
 }

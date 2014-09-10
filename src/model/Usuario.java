@@ -3,11 +3,11 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Usuario {
-	// TODO realmente eh necessario todas essa informacoes? Por mim soh deveria ter o nome e identidade
+public class Usuario { // TODO talvez nem seja necess·rio para a entrega na disciplina
+	// TODO realmente eh necessario todas essa informacoes? Por mim soh deveria ter o nome e identidade (Pedro Victor)
 	private String nome, telefone, email, dataNasc, cpf, rg;
-	private List<ListaDeProdutos> conjuntoDeListas;
-	private Carrinho carrinho;
+// TODO private List<ListaDeProdutos> conjuntoDeListas; // descomentar depois de completar a disciplina
+	private Carrinho carrinho; //TODO abolida?
 	
 	public Usuario(String nome, String dataNascimento, String cpf, String telefone, String email) {
 		this.nome = nome;
@@ -15,7 +15,7 @@ public class Usuario {
 		this.cpf = cpf;
 		this.telefone = telefone;
 		this.email = email;
-		conjuntoDeListas = new ArrayList<ListaDeProdutos>();
+//TODO		conjuntoDeListas = new ArrayList<ListaDeProdutos>(); // descomentar depois de completar a disciplina
 		carrinho = new Carrinho();
 	}
 	
@@ -67,11 +67,11 @@ public class Usuario {
 		this.telefone = telefone;
 	}
 	
-	public void adicionaListaNoConjuntoDeListas(ListaDeProdutos lista){
+	
+	//TODO ALERTA, o usuario nao eh responsavel por essas funcoes abaixo
+/*		public void adicionaListaNoConjuntoDeListas(ListaDeProdutos lista){
 		conjuntoDeListas.add(lista);
 	}
-	
-	//TODO usuario nao eh responsavel por essas funcoes abaixo
 	public void removeListaDoConjuntoDeListas(String nome){
 		int tamanhoAntesDaRemocao = conjuntoDeListas.size();
 		for(ListaDeProdutos l : conjuntoDeListas){
@@ -80,7 +80,7 @@ public class Usuario {
 			}
 		}
 		if(conjuntoDeListas.size() == tamanhoAntesDaRemocao){
-			System.out.println("Lista n√£o encontrada.");
+			System.out.println("Lista n„o encontrada.");
 		}
 	}
 	
@@ -127,6 +127,7 @@ public class Usuario {
 		}
 		return false;
 	}
+*/	
 	
 	
 	public String toString(){

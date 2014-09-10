@@ -35,10 +35,12 @@ public class Main {
 		lista1.adicionaProduto(sabaoEmPoOmo500G);
 		System.out.println(lista1.toString());
 			
+		/* TODO repensar se esses métodos deveriam estar em Usuário
 		u1.adicionaListaNoConjuntoDeListas(lista1);
 		u1.adicionaListaNoCarrinho("feira semanal");
 		System.out.println(u1.estaListaNoCarrinho("feira semanal"));
 		System.out.println(u1.confirmaFeira("feira semanal", "sim"));
+		 */
 		
 		System.out.println(lista1.getPreco());
 		
